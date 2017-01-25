@@ -3,187 +3,72 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Untitled Document</title>
-<link rel="shortcut icon" href="/mutt_files/favicon.ico" type="image/x-icon">
-<script type="text/javascript" src="/mutt_files/jquery-1.3.2.min.js"></script>
-<style type="text/css">
-<!--
-a {
-	outline: none;
-}
+<link rel="shortcut icon" href="/mutt_files/favicon.ico" type="image/x-icon" />
+<link type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
-div {
-	display: inline-block;
-}
-
-#videoHolder {height: 636px;
-	width: 585px;
-	background-color:#FFE2AB;
-	overflow:hidden;
+<style>
+	#theVideo {
+		display: inline-block;
 	}
-#tv-knob-1 {
-	position: relative;
-	left: 444px;
-	top: 156px;
-	height: 70px;
-	width: 70px;
-	
-}
-.channel0,.channel4 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-}
-.channel1 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -76px;
-}
-.channel2 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -154px;
-}
-.channel3 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -232px;
-}
-.channel5 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -232px;
-}
-
-.channel6 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -76px;
-}
-.channel7 {
-	background-image: url(../muttcams/_images/tv-knob.png);
-	background-repeat: no-repeat;
-	background-position: 0px -154px;
-}
-
-#retroTV {
-	background-image: url(../muttcams/_images/new-retro-tv.png);
-	height: 540px;
-	width: 590px;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index:999;
-	top: -30px;
-}
-#theVideo {
-	background-image: url(../muttcams/_images/static1.gif);
-}
-.tvOff {
-	background-image: url(../muttcams/_images/tv-off.gif);
-}
-.onOff {
-	height: 30px;
-	width: 30px;
-	position: relative;
-	top: 260px;
-	left: 482px;
-	background-image: url(../muttcams/_images/tv-power-button.gif);
-	cursor:pointer;
-}
-
-#cc_button_id.cc_button_class {
-	height: 20px;
-	width: 24px;
-	position: relative;
-	top: 285px;
-	left: 448px;
-	cursor:pointer;
-	display:block;
-}
-
-.tv-knob-off {
-	background-image: url(../muttcams/_images/tv-power-button.gif);
-}
-
-#retroTV .channelNumber {
-	position: relative;
-	height: 30px;
-	width: 32px;
-	top: 161px;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 22px;
-	font-weight: bold;
-	left: 463px;
-	color: #FCFF02;
-}
-#closedCaption {position:relative;left:100px;top:-450px;background-color:#000;width:300px;height:20px;color:#FFF;padding:4px 16px 10px 12px;font-size:13px;font-family:arial;display:none;text-align:center;}
-
-#retroTV {border:none;overflow:hidden;width:585px;}
-
--->
 </style>
-
-<script type="text/javascript" src="/mutt_files/starter_7_cams.js"></script>
 
 </head>
 
 <body style="margin:0px; background-color:#FFE2AB;">
 
-
-<div id="theVideo">
-	<div id="camDiv1">
-		<img src="http://74.7.121.118:8080/cam_1.jpg?uniq=0.9640018041300236" class="webcam_in_frame" id="webcam1" width="320" height="240" alt="">
+<section>
+	<header>
+		<h2>Kearney Mesa</h2>
+	</header>
+	<div id="theVideo">
+		<div id="camDiv1">
+			<img src="http://74.7.121.118:8080/cam_1.jpg?uniq=0.9640018041300236" class="webcam_in_frame" id="webcam1" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-<div id="theVideo">
-	<div id="camDiv2">
-		<img src="http://74.7.121.118:8080/cam_2.jpg?uniq=0.09869660023713256" class="webcam_in_frame" id="webcam2" width="320" height="240" alt="">
+	<div id="theVideo">
+		<div id="camDiv2">
+			<img src="http://74.7.121.118:8080/cam_2.jpg?uniq=0.09869660023713256" class="webcam_in_frame" id="webcam2" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-<div id="theVideo">
-	<div id="camDiv4">
-		<img src="http://74.7.121.118:8080/cam_4.jpg?uniq=0.6040010253955659" class="webcam_in_frame" id="webcam4" width="320" height="240" alt="">
+	<div id="theVideo">
+		<div id="camDiv4">
+			<img src="http://74.7.121.118:8080/cam_4.jpg?uniq=0.6040010253955659" class="webcam_in_frame" id="webcam4" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-<div id="theVideo">
-	<div id="camDiv5">
-		<img src="http://74.7.121.118:8080/cam_5.jpg?uniq=0.9164951544356941" class="webcam_in_frame" id="webcam5" width="320" height="240" alt="">
+	<div id="theVideo">
+		<div id="camDiv5">
+			<img src="http://74.7.121.118:8080/cam_5.jpg?uniq=0.9164951544356941" class="webcam_in_frame" id="webcam5" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-<div id="theVideo">
-	<div id="camDiv3">
-		<img src="http://74.7.121.118:8080/cam_3.jpg?uniq=0.868964461802624" class="webcam_in_frame" id="webcam3" width="320" height="240" alt="">
+	<div id="theVideo">
+		<div id="camDiv3">
+			<img src="http://74.7.121.118:8080/cam_3.jpg?uniq=0.868964461802624" class="webcam_in_frame" id="webcam3" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-
-<!-- Small Dogs
-<div id="theVideo">
-	<div id="camDiv6">
-		<img src="http://74.7.121.118:8080/cam_6.jpg?uniq=0.7605647431991682" class="webcam_in_frame" id="webcam6" width="320" height="240" alt="">
+</section>
+<section>
+	<header>
+		<h2>Sorrento Valley</h2>
+	</header>
+	<div id="theVideo">
+		<div id="camDiv4">
+			<img src="http://72.34.80.74/cam_3.jpg?uniq=0.2909371143208286" class="webcam_in_frame" id="webcam" width="320" height="240" alt="">
+		</div>
+	</div>	
+	<div id="theVideo">
+		<div id="camDiv1">
+			<img src="http://72.34.80.74/cam_1.jpg?uniq=0.09402000776964026" class="webcam_in_frame" id="webcam2" width="320" height="240" alt="">
+		</div>
 	</div>
-</div>
-<div id="theVideo">
-	<div id="camDiv7">
-		<img src="http://74.7.121.118:8080/cam_7.jpg?uniq=0.7605647431991682" class="webcam_in_frame" id="webcam7" width="320" height="240" alt="">
-	</div>
-</div>
--->
+	<div id="theVideo">
+		<div id="camDiv2">
+			<img src="http://72.34.80.74/cam_2.jpg?uniq=0.9563615638553082" class="webcam_in_frame" id="webcam3" width="320" height="240" alt="">
+		</div>
+	</div>	
+</section>
 
-
-<script type="text/javascript">
-	
-</script>
-
-
-<script type="text/javascript">
-	var theBase = "http://74.7.121.118:8080";
-</script>
-<script type="text/javascript" src="/mutt_files/helper_7_cams.js"></script>
-
-<script type="text/javascript">
-	cam1();
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="/mutt_files/app.js"></script>
 
 </body>
 </html>
